@@ -37,5 +37,5 @@ print(ford[0]) # this will cause and error
 
 # yoy can use a for only when you have len and get item, because you converted that class to 
 
-for car in ford:
-    print(car)
+#for car in ford:
+#    print(car)
