@@ -18,6 +18,7 @@ rolf = Student("Rolf", "MIT")
 rolf.marks.append(78)
 rolf.marks.append(99)
 
+# This is called instance method
 print(rolf.average())
 
 """
@@ -53,3 +54,25 @@ Notice that this knowledge now lets us do some very weird stuff (not recommended
 Student.average(
     "hello"
 )  # self is now 'hello', comment this out to run the rest of the file.
+
+class Foo
+    @classmethod
+    def hi (cls):
+        print(cls.__name__)
+
+my_object = foo
+my_object.hi()
+
+# cls = class 
+
+class bar
+    @staticmethod
+    def hi ():
+        print('hello, i dont\'t take parameters. ')
+
+another_object = bar()
+another_object.hi()
+
+# the class method when you want something access to the class
+# And static methods that dosen't use the current object or the class but it soemhow related to the class
+
