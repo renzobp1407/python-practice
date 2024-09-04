@@ -32,9 +32,10 @@ def find_list_items():
      list_contents = [e.string for w in list_items]
      print(list_items)     
 
-def find_subtitle():
+def find_paragraph():
      paragraph = simple_soup.find('p', {'class': 'subtitle'})
      print(paragraph.string)
+
 
 def find_other_paragraph():
      paragraphs = simple_soup.find_all('p')
@@ -46,3 +47,5 @@ def find_other_paragraph():
 
 find_title()
 find_list_items()
+find_paragraph()
+find_other_paragraph()
