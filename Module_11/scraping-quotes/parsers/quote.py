@@ -2,6 +2,12 @@ from locators.quote_locators import QuoteLocators
 
 
 class QuoteParser:
+    """
+    given one of the specific quote divs, 
+    find out the data about the quote ( quote content, author, tags)
+    """
+
+
     def __init__(self, parent):
         self.parent = parent
 
