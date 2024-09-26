@@ -1,5 +1,6 @@
 from locators.quotes_page_locators import QuotesPageLocators
 from parsers.quote import QuoteParser
+from selenium.webdriver.common.by import By
 
 
 class QuotesPage:

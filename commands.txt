@@ -4,6 +4,8 @@ python -m venv nombre_del_entorno
 # Activar entorno virtual
 .\nombre_del_entorno\Scripts\activate
 
+.\selenium\Scripts\activate 
+
 # en la carpeta html creada en el entorno virtual
 .\html\Scripts\activate
 
@@ -16,3 +18,5 @@ pip install -r requirements.txt
 # desactivar
 deactivate
 
+# Web driver locator for module 12
+service = Service("D:\chromedriver\chromedriver.exe")
