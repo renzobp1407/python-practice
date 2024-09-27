@@ -62,7 +62,7 @@ class QuotesPage:
         )
 
         # Alternatively, explicit wait
-        time.sleep(10)
+        time.sleep(5)
 
         try:
             self.select_tag(tag_name)
