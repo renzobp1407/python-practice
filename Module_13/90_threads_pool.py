@@ -1,6 +1,10 @@
 import time
 from concurrent.futures import ThreadPoolExecutor
 
+# thread pool executor is going to create a pool (collections of threads) of threads
+# thats a bunch of threads with no targets and is going to allow us
+# to use that pool to execute jobs (functions)
+
 ####### SINGLE THREAD
 
 def ask_user():

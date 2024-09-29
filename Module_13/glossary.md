@@ -29,3 +29,38 @@ GIL: A key, critical, important resource in any Python program. Only one is crea
 
 
 ## Pyhton GIL (The Global Interpreter Lock)
+
+- you cannot run two threads in one process at the same time
+- each process in pyhton creates a Key Resource
+- when a thread is runnig, it must acquire that resource since theres's only one of that, only one thread can run in a process at once
+
+## Multiple Pythons
+
+you can, however, launch multiple pythons proces
+- each process in python creates it's own GIL
+- Each process creates one thread but they cannot easily share data (e.g Have the same variables)
+
+## whats the point of thread in python
+
+R// reduce waiting time
+
+- do 2 things at the same time
+
+- single thread: mathematical calculation and user input
+or user input and mathematical calculation 
+
+Cooperative multitasking (but only one thread can run at a time)
+
+- we can ask the user the input and when he is typing the mathematical process executes taking the GIL (and releasing), and when the user input the string, it wil go back to the user process again and continues the math process
+
+## dont kill the thread
+
+- don't kill the thread before it releases GIL, it can do an execution error on the thread list, this is called *Deadlock*
+
+## Multiprocessing in Windows or ARM Macs
+
+In the lecture, Windows or ARM Mac (M1, M2, etc) users might encounter a small issue.
+
+Due to the way these systems work you must make sure that the code that starts a process is surrounded by if __name__ == "__main__".
+
+Otherwise when we start new processes, those processes automatically start new processes, and those start new ones, and so on. Python will not allow this to happen, and as protection it requires the above if statement.
