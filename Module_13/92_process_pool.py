@@ -35,5 +35,3 @@ with ProcessPoolExecutor(max_workers=2) as pool:
 	pool.submit(complex_calculation)
 
 print('Two process total time: ', time.time() - start)
-
-# Run this and see what happens!
