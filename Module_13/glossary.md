@@ -66,3 +66,8 @@ Due to the way these systems work you must make sure that the code that starts a
 Otherwise when we start new processes, those processes automatically start new processes, and those start new ones, and so on. Python will not allow this to happen, and as protection it requires the above if statement.
 
 Join() = espera que temine el proceso para empezar el que sigue
+
+atomic operation = is a process that cannot be interrupted in the middle of it
+
+adding random to multithreaded codes is called fuzzying
+

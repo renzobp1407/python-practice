@@ -8,14 +8,13 @@ def increment_counter():
 	global counter
 	time.sleep(random.randint(0, 2))
 	counter += 1
-	time.sleep(random.randint(0, 2))
+	time.sleep(random.randint(0, 2)) # adding random to multithreaded codes is called fuzzying
 	print(f'New counter value: {counter}')
 	time.sleep(random.randint(0, 2))
 	print('-----------')
 
 
-
 for x in range(10):
 	t = Thread(target=increment_counter)
 	time.sleep(random.randint(0, 2))
-	t.start()
+	t.start
