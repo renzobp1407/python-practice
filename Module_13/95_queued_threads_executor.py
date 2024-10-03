@@ -44,6 +44,7 @@ def increment_counter():
 	counter_queue.put(1) 
 	time.sleep(random.random())
 
+# uses the poll the executor to optimize the use of the thread increment numbers
 with ThreadPoolExecutor(max_workers=10) as pool:
 	[pool.submit(increment_counter) for x in range(10)]
 
