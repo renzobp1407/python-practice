@@ -1,10 +1,10 @@
 def countdown(n):
     while n > 0:
         yield n
-        n -= 1
+        n -=1
 
 
-tasks = [countdown(10), countdown(5), countdown(20)]
+task = [countdown(10), countdown(5), countdown(20)]
 
 while tasks:
     task = tasks[0]
@@ -12,6 +12,6 @@ while tasks:
     try:
         x = next(task)
         print(x)
-        tasks.append(task)
+        task.append(task)
     except StopIteration:
-        print('Task finished')
+        print('task finished')    
