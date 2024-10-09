@@ -71,3 +71,8 @@ atomic operation = is a process that cannot be interrupted in the middle of it
 
 adding random to multithreaded codes is called fuzzying
 
+Priming the generator: 
+g = greet()
+g.send(none) # priming the generator
+
+Co routine: they can take data and can be suspended
