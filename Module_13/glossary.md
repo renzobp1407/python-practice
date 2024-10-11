@@ -76,3 +76,13 @@ g = greet()
 g.send(none) # priming the generator
 
 Co routine: they can take data and can be suspended
+
+*variable 
+this is an unpacked argument, this is for passing multiple agruments of a list, tuple or anothe iterable as indovidual arguments to a function
+
+def print_urls(url1, url2, url3):
+    print(url1, url2, url3)
+
+urls = ['https://example.com', 'https://google.com', 'https://openai.com']
+
+print_urls(*urls)
