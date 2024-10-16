@@ -20,3 +20,11 @@ deactivate
 
 # Web driver locator for module 12
 service = Service("D:\chromedriver\chromedriver.exe")
+
+----------------------------------------------------
+Module 15 Flask Project
+
+pipenv install Flask
+
+activate virtualenv
+pipenv shell

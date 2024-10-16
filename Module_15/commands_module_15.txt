@@ -1,0 +1,10 @@
+pipfile = libraries it needs
+pipfile.lock = is for locking the versions of the used 
+
+----------------------------------------------------
+Module 15 Flask Project
+
+pipenv install Flask
+
+activate virtualenv
+pipenv shell
