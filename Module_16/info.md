@@ -40,3 +40,12 @@ code example:
 pages for API
 https://openexchangerates.org/
 
+https://docs.python.org/3/library/functools.html
+
+LRU = least recently used
+functools = modulo para hight order functions: funciones que cuantan o retornan otras funciones, basicamente cualquier objeteo llamable puede ser tratado como una funcion para propositos de este modulo
+
+cache = infomraction que se guarda de forma temporal para cuando se vuelva a usar sea super rapido
+
+TTL = Timate to live
+es el tiempo durante el que un registro DNS permanece almacenado en la memoria caché de un servido
