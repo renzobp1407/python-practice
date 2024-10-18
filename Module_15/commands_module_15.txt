@@ -4,7 +4,26 @@ pipfile.lock = is for locking the versions of the used
 ----------------------------------------------------
 Module 15 Flask Project
 
+# para instalar el pipenv
+pipenv install
+
+# instalar Flask
 pipenv install Flask
+
+pipenv install request
 
 activate virtualenv
 pipenv shell
+
+pipenv run
+--------------------
+
+paso a paso:
+https://pipenv.pypa.io/zh-cn/stable/basics.html
+
+# para instalar el pipenv
+pipenv install
+
+# para instalar la dependencia
+pipenv install <nombre dependencia>
+pipenv install requests
