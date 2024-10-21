@@ -27,3 +27,6 @@ pipenv install
 # para instalar la dependencia
 pipenv install <nombre dependencia>
 pipenv install requests
+
+activate virtualenv
+pipenv shell
