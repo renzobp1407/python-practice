@@ -48,7 +48,7 @@ class Binarytree:
         current_node = self.head
         while current_node:
             if (current_node.left and current_node.left.value == value) or\
-                    (current_node.right and current_node.right.value = value):
+                    (current_node.right and current_node.right.value == value):
                 return current_node
             elif value > current_node.value:
                 current_node = current_node.right
