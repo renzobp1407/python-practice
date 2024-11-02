@@ -12,7 +12,9 @@ class Binarytree:
             elif new_node.value < current_node.value:
                 if current_node.left:
                     current_node = current_node.left
-                    break
+                else:
+                    current_node.left = new_node
+                    break    
             else:
                 if current_node.right:
                     current_node = current_node.right
@@ -29,7 +31,7 @@ class Binarytree:
                 current_node = current_node.right
             else:
                 current_node = current_node.left
-            raise LookupError(f'A Node with value {value} was not found.')
+        raise LookupError(f'A Node with value {value} was not found.')
                 
     def inorder(self):
         self._inorder_recursive(self.head)
