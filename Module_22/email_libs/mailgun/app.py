@@ -1,7 +1,7 @@
 import requests
 
-MAILGUN_API_URL = 'https://api.mailgun.net/v3/sandbox0fd1d065f521484b8af277034648e756.mailgun.org'
-MAILGUN_API_KEY = 'key-798b9585aedd35d87f1bf506cadc221e'
+MAILGUN_API_URL = 'API_URL'
+MAILGUN_API_KEY = 'API_key'
 
 FROM_NAME = 'Jose'
 FROM_EMAIL = 'jose@schoolofcode.me'
